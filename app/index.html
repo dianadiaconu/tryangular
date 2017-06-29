@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html lang="en" ng-app="tryangular" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html lang="en" ng-app="tryangular" class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html lang="en" ng-app="tryangular" class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en" ng-app="tryangular" class="no-js"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>My AngularJS App</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <script src="js/angular.min.js"></script>
+  <script src="app.module.js"></script>
+  <script src="app.config.js"></script>
+  <script src="blog-list/blog-list.module.js"></script>
+  <script src="blog-list/blog-list.component.js"></script>
+
+
+    <style>
+        .new-class {
+            font-size: 72px;
+        }
+
+        .other-class {
+            font-size: 24px;
+        }
+    </style>
+</head>
+<body>
+<h1 class="new-class" ng-class="{'other-class': !name}">
+    Hello, <span ng-if="name">{{name}} </span> <span ng-if="!name"> world</span>!
+</h1>
+  <input type="text" ng-model="name"/>
+
+    <div class="" ng-controller="BlogListController">
+
+    </div>
+</body>
+</html>
