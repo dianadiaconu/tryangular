@@ -6,5 +6,6 @@ angular.module('tryangular', [
     'ngRoute',
 
     //internal
+    'blogDetail',
     'blogList'
 ]);

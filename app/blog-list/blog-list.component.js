@@ -7,7 +7,9 @@ angular.module('blogList')
     .component('blogList', {
        // template: " <div> <h1>{{title}}</h1><button ng-click='someClickTest()'>Click me!</button></div>",
         templateUrl: 'blog-list/blog-list.html',
-        controller: function ($scope) {
+        controller: function ($routeParams, $scope) {
+            console.log($routeParams.id);
+
             var blogItems = [
                 {title: "Some title 1", id: 1, description: "This is a description"},
                 {title: "Some title 2", id: 2, description: "This is a description"},

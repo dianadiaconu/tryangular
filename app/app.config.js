@@ -13,12 +13,12 @@ angular.module('tryangular')
                 .when("/about", {
                     templateUrl: "/about.html"
                 })
-                .when("/blog/1", {
-                    template: "<h1>Hi</h1>"
+                .when("/blog/:id", {
+                    template: "<blog-detail></blog-detail>"
                 })
-                .when("/blog/2", {
-                    template: "<h1>H1 22</h1>"
-                })
+                // .when("/blog/2", {
+                //     template: "<h1>H1 22</h1>"
+                // })
                 .otherwise({
                     template: "Not Found"
                 })
