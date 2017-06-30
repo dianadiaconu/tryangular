@@ -10,10 +10,34 @@ angular.module('blogDetail')
                 angular.forEach(data, function (post) {
                     if (post.id == $routeParams.id) {
                         $scope.post = post;
+                        resetReply();
                     }
 
                 })
             });
+
+            function resetReply() {
+                $scope.reply = {
+                    "id": $scope.post.comments.length + 1,
+                    "text": ""
+                }
+            }
+
+            $scope.addReply = function () {
+                console.log($scope.reply);
+                $scope.post.comments.push($scope.reply);
+
+                resetReply();
+
+            };
+
+            if ($scope.notFound) {
+                // change location
+                $location.path("/404");
+                console.log("Not found");
+
+            }
+
 
             //$http.get("/json/posts.json").then(successCallback, errorCallback);
 
@@ -35,12 +59,6 @@ angular.module('blogDetail')
             //     console.log(response);
             // }
 
-            if ($scope.notFound) {
-                // change location
-                $location.path("/404");
-                console.log("Not found");
-
-            }
 
 
 

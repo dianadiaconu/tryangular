@@ -7,10 +7,17 @@ angular.module('blogList')
     .component('blogList', {
        // template: " <div> <h1>{{title}}</h1><button ng-click='someClickTest()'>Click me!</button></div>",
         templateUrl: 'blog-list/blog-list.html',
-        controller: function (Post, $routeParams, $scope) {
-            console.log($routeParams.id);
+        controller: function (Post, $rootScope, $routeParams, $location, $scope) {
+            //console.log($routeParams.id);
 
+            $scope.goToItem = function (item) {
+                $rootScope.$apply(function () {
+                    $location.path("/blog/" + item.id)
+                })
+            };
             $scope.items = Post.query();
+
+
 
             // var blogItems = [
             //     {title: "Some title 1", id: 1, description: "This is a description"},
@@ -21,14 +28,14 @@ angular.module('blogList')
 
             // $scope.items = blogItems;
 
-            console.log("hello from blogList controller");
-            $scope.title = "Smth";
-            $scope.count = 0;
-
-            $scope.someClickTest = function () {
-                $scope.count += 1;
-                $scope.title = "Clicked " + $scope.count + " times";
-
-            }
+            // console.log("hello from blogList controller");
+            // $scope.title = "Smth";
+            // $scope.count = 0;
+            //
+            // $scope.someClickTest = function () {
+            //     $scope.count += 1;
+            //     $scope.title = "Clicked " + $scope.count + " times";
+            //
+            // }
         }
 });
