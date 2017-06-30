@@ -2,7 +2,8 @@
 
 <ul>
     <li ng-repeat="item in items">
-        <a ng-href="/blog/{{item.id}}">{{item.title}}</a>
+        <!--<a ng-href="/blog/{{item.id}}">{{item.title}}</a>-->
+        <confirm-click message="Are you positive?" post="item" eq="10+100"></confirm-click>
     </li>
 </ul>
 

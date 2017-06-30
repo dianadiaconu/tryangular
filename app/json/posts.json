@@ -1,0 +1,6 @@
+[
+  {"title": "Some title1", "id": 1, "description": "This is a description1", "publishDate": "12-06-2017"},
+  {"title": "Some title2", "id": 2, "description": "This is a description2"},
+  {"title": "Some title3", "id": 3, "description": "This is a description3"},
+  {"title": "Some title4", "id": 4, "description": "This is a description"}
+]
