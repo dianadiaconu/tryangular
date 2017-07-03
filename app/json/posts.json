@@ -3,8 +3,15 @@
     "comments": [
       {"id": 1, "text": "Nice book"},
       {"id": 2, "text": "Another content"}
-    ]},
-  {"title": "Some title2", "id": 2, "description": "This is a description2"},
-  {"title": "Some title3", "id": 3, "description": "This is a description3"},
-  {"title": "Some title4", "id": 4, "description": "This is a description"}
+    ],
+  "image": "http://filmgratistoto.weebly.com/uploads/3/1/5/8/31582537/wallpaper-natura.jpeg"
+  },
+  {"title": "Some title2", "id": 2, "description": "This is a description2" , "publishDate": "12-06-2017", "image": "http://filmgratistoto.weebly.com/uploads/3/1/5/8/31582537/wallpaper-natura.jpeg"},
+  {"title": "Some title3", "id": 3, "description": "This is a description3", "publishDate": "12-06-2017", "image": "http://filmgratistoto.weebly.com/uploads/3/1/5/8/31582537/wallpaper-natura.jpeg"},
+  {"title": "Some title4", "id": 4, "description": "This is a description", "publishDate": "12-06-2017", "image": "http://filmgratistoto.weebly.com/uploads/3/1/5/8/31582537/wallpaper-natura.jpeg"},
+  {"title": "Some title5", "id": 5, "description": "This is a description", "publishDate": "12-06-2017", "image": "http://filmgratistoto.weebly.com/uploads/3/1/5/8/31582537/wallpaper-natura.jpeg"},
+  {"title": "Some title6", "id": 6, "description": "This is a description", "publishDate": "12-06-2017", "image": "http://filmgratistoto.weebly.com/uploads/3/1/5/8/31582537/wallpaper-natura.jpeg"},
+  {"title": "Some title7", "id": 7, "description": "This is a description", "publishDate": "12-06-2017", "image": "http://filmgratistoto.weebly.com/uploads/3/1/5/8/31582537/wallpaper-natura.jpeg"},
+  {"title": "Some title8", "id": 8, "description": "This is a description", "publishDate": "12-06-2017", "image": "http://filmgratistoto.weebly.com/uploads/3/1/5/8/31582537/wallpaper-natura.jpeg"},
+  {"title": "Some title9", "id": 9, "description": "This is a description", "publishDate": "12-06-2017", "image": "http://filmgratistoto.weebly.com/uploads/3/1/5/8/31582537/wallpaper-natura.jpeg"}
 ]
