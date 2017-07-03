@@ -17,6 +17,8 @@
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular-resource.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular-route.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/2.5.0/ui-bootstrap-tpls.min.js"></script>
+
   <script src="js/dirPagination.js"></script>
 
   <script src="app.module.js"></script>
@@ -33,15 +35,20 @@
   <script src="utils/confirm-click/confirm-click.module.js"></script>
   <script src="utils/confirm-click/confirm-click.directive.js"></script>
 
+  <script src="utils/try-nav/try-nav-module.js"></script>
+  <script src="utils/try-nav/try-nav.directive.js"></script>
+
 </head>
 <body>
+    <div class="container">
+      <try-nav></try-nav>
 
-    <nav class="container">
-      <h1>US</h1>
-    </nav>
-    <div class="container" ng-view>
+      <div ng-view>
 
+      </div>
     </div>
+
+
 
 </body>
 </html>

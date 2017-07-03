@@ -9,6 +9,12 @@ angular.module('blogList')
         templateUrl: 'blog-list/blog-list.html',
         controller: function (Post, $rootScope, $routeParams, $location, $scope) {
             //console.log($routeParams.id);
+            var q = $location.search().q;
+
+            if (q) {
+                $scope.query = q;
+                $scope.searchQuery = true;
+            }
 
             $scope.goToItem = function (item) {
                 $rootScope.$apply(function () {
@@ -32,7 +38,10 @@ angular.module('blogList')
             $scope.$watch(function () {
                 if($scope.query) {
                     $scope.loadingQuery = true;
-                    $scope.cssClass = 'col-sm-12'
+                    $scope.cssClass = 'col-sm-12';
+                    if ($scope.query != q) {
+                        $scope.searchQuery = false;
+                    }
                 } else {
                     if ($scope.loadingQuery) {
                         setupCol($scope.items, 2)

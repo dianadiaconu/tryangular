@@ -1,6 +1,3 @@
-/**
- * Created by negr on 6/28/2017.
- */
 'use strict';
 angular.module('tryangular')
     .config(
@@ -12,6 +9,9 @@ angular.module('tryangular')
                 })
                 .when("/about", {
                     templateUrl: "/about.html"
+                })
+                .when("/blog", {
+                    template: "<blog-list></blog-list>"
                 })
                 .when("/blog/:id", {
                     template: "<blog-detail></blog-detail>"

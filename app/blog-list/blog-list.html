@@ -10,7 +10,8 @@
 
 <!--<span ng-if="items.length == 4">4 items currently</span>-->
 
-<h1>Blog List<small><a href="#" ng-click="changeCols(4)">Change</a></small></h1>
+<h1 ng-hide="searchQuery">Blog List<small><a href="#" ng-click="changeCols(4)">Change</a></small></h1>
+<h1 ng-show="searchQuery">Results List for {{query}}<small><a href="#" ng-click="changeCols(4)">Change</a></small></h1>
 <div class="row">
     <div class="col-sm-6">
         <input type="text" ng-model="query" class="form-control" placeholder="Filter"/>

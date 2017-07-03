@@ -22,13 +22,15 @@ angular.module('blogDetail')
 
             function resetReply() {
                 $scope.reply = {
-                    "id": $scope.post.comments.length + 1,
+                    "id": $scope.post.comments ? $scope.post.comments.length + 1: [],
                     "text": ""
                 }
             }
 
             $scope.addReply = function () {
                 console.log($scope.reply);
+                $scope.post.comments ? $scope.post.comments : $scope.post.comments = [];
+
                 $scope.post.comments.push($scope.reply);
 
                 resetReply();
